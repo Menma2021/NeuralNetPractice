@@ -54,8 +54,8 @@ public class GeneticAlgorithm : MonoBehaviour
         // Generate new individuals through crossover and mutation
         while (newPopulation.Count < populationSize)
         {
-            NeuralNetwork parent1 = population[UnityEngine.Random.Range(0, 5)];
-            NeuralNetwork parent2 = population[UnityEngine.Random.Range(0, 5)];
+            NeuralNetwork parent1 = population[UnityEngine.Random.Range(0, 15)];
+            NeuralNetwork parent2 = population[UnityEngine.Random.Range(0, 15)];
 
             NeuralNetwork child = Crossover(parent1, parent2);
             child.Mutate(mutationRate);
